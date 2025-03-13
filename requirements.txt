@@ -1,0 +1,7 @@
+crewai 
+langchain_openai 
+crewai[tools]
+gradio
+fpdf
+langchain_community
+python-dotenv 
