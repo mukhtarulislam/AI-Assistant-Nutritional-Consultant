@@ -7,21 +7,21 @@
 - **AI-Driven Diet Planning:** Uses multiple AI agents to research nutrition, analyze health conditions, and craft custom diet plans.
 - **Interactive Gradio Interface:** Enter your personal, health, and dietary information easily through an intuitive UI.
 - **PDF Generation:** Automatically convert your personalized nutrition plan into a downloadable PDF.
-
+- **Easy Installation:** Packaged as a Python module with a console script (`uv`) to launch the Gradio app.
 
 ## Project Structure
 
-AI-Assistant Nutritional Consultant/ ├── AI-Assistant Nutritional Consultant/ 
-                                                                  ├── init.py │ 
-                                                                  ├── agents.py # Defines the nutrition, medical, and diet planning agents. │ 
-                                                                  ├── tasks.py # Sets up tasks for each agent based on user inputs. │ 
-                                                                  ├── pipeline.py # Orchestrates the entire CrewAI pipeline. │ 
-                                                                  ├── pdf_generator.py # Converts the nutrition plan text into a PDF. 
-                                                                  │── main.py # Gradio interface and entry point for the application. 
-                                                                  ├── LICENSE 
-                                                                  ├── README.md 
-                                                                  ├── requirements.txt # List of package dependencies. 
-                   
+nutrition_advisor/ ├── nutrition_advisor/ 
+                   │ ├── init.py │ 
+                     ├── agents.py # Defines the nutrition, medical, and diet planning agents. │ 
+                     ├── tasks.py # Sets up tasks for each agent based on user inputs. │ 
+                     ├── pipeline.py # Orchestrates the entire CrewAI pipeline. │ 
+                     ├── pdf_generator.py # Converts the nutrition plan text into a PDF. 
+                     │── main.py # Gradio interface and entry point for the application. 
+                     ├── LICENSE 
+                     ├── README.md 
+                     ├── requirements.txt # List of package dependencies. 
+                     └── setup.py # Packaging instructions and entry point definition.
 
 
 
@@ -45,7 +45,8 @@ cd AI-Assistant-Nutritional-Consultant
 Step 2: Set Up a Virtual Environment (Optional but Recommended)
 It is recommended to set up a virtual environment to manage your dependencies. To do this, run the following commands:
 
-
+bash
+Copy
 python3 -m venv env
 source env/bin/activate  # On Windows, use `env\Scripts\activate`
 Step 3: Install Dependencies
